@@ -15,9 +15,15 @@ enabled = true
 name = "docker"
 enabled = true
 
+ [analyzers.meta]
+  environment = ["jquery"]
+
 [[analyzers]]
 name = "javascript"
 enabled = true
+
+ [analyzers.meta]
+  environment = ["jquery"]
 
   [analyzers.meta]
   plugins = [
@@ -38,4 +44,13 @@ name = "java"
 enabled = true
 
   [analyzers.meta]
+  runtime_version = "1"
+  
+  [analyzers.meta]
+  runtime_version = "8"
+  
+  [analyzers.meta]
   runtime_version = "14"
+  
+  [analyzers.meta]
+  runtime_version = "17"
